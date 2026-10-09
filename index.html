@@ -51,7 +51,6 @@
       gap: 20px;
     }
 
-    /* Header */
     .brand-header {
       text-align: center;
       padding: 12px 0 4px;
@@ -59,13 +58,10 @@
 
     .logo-badge {
       display: inline-block;
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 800;
       letter-spacing: -0.5px;
-      color: var(--text-main);
-      background: linear-gradient(135deg, #ffffff 60%, #9ca3af 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #ffffff;
     }
 
     .brand-slogan {
@@ -77,7 +73,6 @@
       text-transform: uppercase;
     }
 
-    /* Common Card Styles */
     .card {
       background-color: var(--card-bg);
       border: 1px solid var(--border-color);
@@ -87,7 +82,6 @@
       transition: var(--transition);
     }
 
-    /* Hero */
     .hero-card {
       border-color: rgba(37, 99, 235, 0.25);
       background: linear-gradient(180deg, rgba(37, 99, 235, 0.05) 0%, var(--card-bg) 60%);
@@ -114,7 +108,6 @@
       gap: 10px;
     }
 
-    /* Buttons */
     .btn {
       width: 100%;
       padding: 13px 18px;
@@ -152,7 +145,6 @@
       border-color: #3b4252;
     }
 
-    /* Section Headings */
     .section-title {
       font-size: 14px;
       font-weight: 600;
@@ -163,7 +155,6 @@
       padding-left: 2px;
     }
 
-    /* Services Grid */
     .services-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -210,7 +201,6 @@
       line-height: 1.4;
     }
 
-    /* Direct Contact Links */
     .contact-links-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -255,3 +245,337 @@
     .contact-sub {
       font-size: 11px;
       color: var(--text-secondary);
+    }
+
+    .meta-card {
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .meta-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .meta-label {
+      color: var(--text-secondary);
+    }
+
+    .meta-val {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .meta-notice {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      background-color: rgba(255, 255, 255, 0.03);
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+    }
+
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .modal-sheet {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 440px;
+      padding: 24px;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 24px;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .modal-close:hover {
+      color: var(--text-main);
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .modal-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+    }
+
+    .form-control {
+      width: 100%;
+      background-color: #0b0c0e;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 11px 12px;
+      color: var(--text-main);
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: var(--accent-color);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .platform-selector {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .radio-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      background-color: #0b0c0e;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      cursor: pointer;
+      color: var(--text-secondary);
+    }
+
+    .radio-label input {
+      display: none;
+    }
+
+    .radio-label.selected {
+      border-color: var(--accent-color);
+      background-color: rgba(37, 99, 235, 0.12);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 11px;
+      color: #6b7280;
+      padding: 12px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <header class="brand-header">
+      <div class="logo-badge">P2F</div>
+      <div class="brand-slogan">People · Problems · Solutions</div>
+    </header>
+
+    <section class="card hero-card">
+      <h1 class="hero-title">Есть задача для бизнеса? Давайте обсудим.</h1>
+      <p class="hero-desc">
+        Помогаем бизнесу решать рабочие задачи с помощью автоматизации и индивидуальных цифровых решений. Расскажите, что хотите улучшить, и мы обсудим возможные варианты.
+      </p>
+      <div class="btn-group">
+        <a href="#contacts" class="btn btn-primary">Связаться с нами</a>
+        <button type="button" class="btn btn-secondary" onclick="openTaskModal()">Рассказать о своей задаче</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Чем занимаемся</div>
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="service-icon">⚙️</div>
+          <div class="service-text-wrap">
+            <div class="service-name">Автоматизация бизнес-процессов</div>
+            <div class="service-desc">Избавление от рутины, снижение влияния человеческого фактора и оптимизация цепочек.</div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🔄</div>
+          <div class="service-text-wrap">
+            <div class="service-name">Интеграции между сервисами и CRM</div>
+            <div class="service-desc">Связка баз данных, платформ учёта, CRM и сервисов в единую слаженную систему.</div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">💬</div>
+          <div class="service-text-wrap">
+            <div class="service-name">Чат-боты и обработка заявок</div>
+            <div class="service-desc">Мгновенная квалификация входящих обращений, уведомления и круглосуточная поддержка.</div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">📱</div>
+          <div class="service-text-wrap">
+            <div class="service-name">Индивидуальные Mini Apps и цифровые инструменты</div>
+            <div class="service-desc">Компактные приложения для клиентов и персонала прямо внутри соцсетей и мессенджеров.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <div class="section-title">Способы связи</div>
+      <div class="contact-links-grid">
+        <a href="https://t.me/Kaiopdj" target="_blank" rel="noopener noreferrer" class="contact-btn tg">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          <span class="contact-title">Telegram</span>
+          <span class="contact-sub">@Kaiopdj</span>
+        </a>
+        <a href="https://vk.ru/s1dix" target="_blank" rel="noopener noreferrer" class="contact-btn vk">
+          <svg viewBox="0 0 24 24"><path d="M15.684 0H8.316C2.992 0 0 2.992 0 8.316v7.368C0 21.008 2.992 24 8.316 24h7.368C21.008 24 24 21.008 24 15.684V8.316C24 2.992 21.008 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.525-2.05-1.714-1.037-1-1.498-1.127-1.752-1.127-.36 0-.462.102-.462.59v1.65c0 .422-.136.6-.1.25-.01.601-.84.601-3.235-.12-2.47-1.76-4.665-5.263-4.717-5.342-.14-.298.003-.45.39-.45h1.744c.49 0 .67.227.86.74.935 2.71 2.503 5.093 3.148 5.093.24 0 .35-.11.35-.713V12.7c-.074-1.29-.757-1.398-.757-1.857 0-.22.185-.436.476-.436h2.738c.37 0 .5.195.5.636v3.424c0 .373.165.5.278.5.228 0 .418-.127.838-.547 1.306-1.455 2.235-3.698 2.235-3.698.123-.272.336-.45.827-.45h1.744c.525 0 .638.272.525.636-.21.982-2.28 3.89-2.38 4.053-.19.3-.267.433 0 .788.19.255.82 1.34 1.24 1.954.773 1.096 1.36 1.487 1.763 1.487z"/></svg>
+          <span class="contact-title">ВКонтакте</span>
+          <span class="contact-sub">vk.ru/s1dix</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="card meta-card">
+      <div class="meta-row">
+        <span class="meta-label">Время работы:</span>
+        <span class="meta-val">Всегда</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Обычно отвечаем:</span>
+        <span class="meta-val">В течение 15 минут</span>
+      </div>
+      <div class="meta-notice">
+        Сообщения, отправленные вне рабочего времени, будут рассмотрены в ближайшее рабочее время.
+      </div>
+    </section>
+
+    <footer class="footer-note">
+      © P2F. Цифровые решения для бизнеса.
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" id="taskModal">
+    <div class="modal-sheet">
+      <button class="modal-close" onclick="closeTaskModal()" aria-label="Закрыть">&times;</button>
+      <h2 class="modal-title">Обсудить задачу</h2>
+      <p class="modal-desc">Опишите задачу — мы подготовим варианты решения и свяжемся с вами.</p>
+
+      <form onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label class="form-label" for="clientName">Ваше имя</label>
+          <input type="text" id="clientName" class="form-control" placeholder="Как к вам обращаться?" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Куда вам удобнее получить ответ?</label>
+          <div class="platform-selector">
+            <label class="radio-label selected" id="optTelegram">
+              <input type="radio" name="targetMessenger" value="telegram" checked onchange="toggleMessengerChoice('telegram')">
+              Telegram
+            </label>
+            <label class="radio-label" id="optVK">
+              <input type="radio" name="targetMessenger" value="vk" onchange="toggleMessengerChoice('vk')">
+              ВКонтакте
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="clientContact">Ваш контакт</label>
+          <input type="text" id="clientContact" class="form-control" placeholder="@username или ссылка на профиль" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="taskDescription">Краткое описание задачи</label>
+          <textarea id="taskDescription" class="form-control" placeholder="Что хотите автоматизировать или разработать?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="margin-top: 8px;">
+          Отправить запрос
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openTaskModal() {
+      document.getElementById("taskModal").classList.add("active");
+    }
+
+    function closeTaskModal() {
+      document.getElementById("taskModal").classList.remove("active");
+    }
+
+    function toggleMessengerChoice(type) {
+      document.getElementById("optTelegram").classList.toggle("selected", type === "telegram");
+      document.getElementById("optVK").classList.toggle("selected", type === "vk");
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById("clientName").value.trim();
+      const contact = document.getElementById("clientContact").value.trim();
+      const desc = document.getElementById("taskDescription").value.trim();
+      const messenger = document.querySelector('input[name="targetMessenger"]:checked').value;
+
+      const messageText = `Здравствуйте! Меня зовут ${name}.\nХочу обсудить задачу для P2F:\n${desc}\n\nМой контакт для связи: ${contact}`;
+
+      closeTaskModal();
+
+      if (messenger === "telegram") {
+        window.open(`https://t.me/Kaiopdj?text=${encodeURIComponent(messageText)}`, "_blank");
+      } else {
+        window.open("https://vk.ru/s1dix", "_blank");
+      }
+    }
+  </script>
+</body>
+</html>
